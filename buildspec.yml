@@ -12,4 +12,4 @@ artifacts:
   files:
     - '**/*.apk'
   discard-paths: yes
-  base-directory: app/build/outputs/apk
+  base-directory: 'app/build/outputs/apk'
