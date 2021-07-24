@@ -9,5 +9,8 @@ phases:
       - cd app/build/outputs/
       - ls
 artifacts:
-  files:
-    - app/build/outputs/apk/app-debug.apk
+  secondary-artifacts:
+    artifact1:
+      base-directory: $CODEBUILD_SRC_DIR
+      files:
+        - app/build/outputs/apk/app-debug.apk
