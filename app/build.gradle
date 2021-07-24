@@ -30,6 +30,12 @@ android {
             }
         }
     }
+    android.applicationVariants.all { variant ->
+        variant.outputs.all { output ->
+            def fileName = "${project.name}_${output.baseName}-${variant.versionName}.apk"
+            outputFileName = fileName
+        }
+    }
     buildTypes {
         release {
             minifyEnabled false
